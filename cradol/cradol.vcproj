@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src\&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -116,7 +116,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src\&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -182,12 +182,24 @@
 				RelativePath="..\src\main.cpp"
 				>
 			</File>
+			<File
+				RelativePath="..\src\SceneMain.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="ヘッダー ファイル"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath="..\src\SceneID.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\SceneMain.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="リソース ファイル"

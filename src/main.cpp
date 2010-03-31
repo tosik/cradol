@@ -2,6 +2,9 @@
 #include "basic/Main.h"
 #include "for/win/MainFunction.h"
 
+#include "SceneMain.h"
+#include "SceneID.h"
+
 int WINAPI WinMain(HINSTANCE hThisInst, HINSTANCE hPrevInst, LPSTR lpszArgs, int nWinMode)
 {
 	// Windows 用のアプリケーションの場合は、この関数に引数をそのまま受け渡す
@@ -9,17 +12,21 @@ int WINAPI WinMain(HINSTANCE hThisInst, HINSTANCE hPrevInst, LPSTR lpszArgs, int
 }
 
 
-
 BlueCarrot::SceneBase * BlueCarrot::callback::CreateScene(BlueCarrot::SceneID scene_id)
 {
-	// TODO : シーンを返してね
-	return NULL;
+	switch ( scene_id )
+	{
+	case cradol::SCENE_MAIN:
+		return new cradol::SceneMain();
+
+	default:
+		return NULL;
+	}
 }
 
 BlueCarrot::SceneID BlueCarrot::callback::GetStartupSceneID()
 {
-	// TODO : スタート時のシーン ID を返してね
-	return 0;
+	return cradol::SCENE_MAIN;
 }
 
 BlueCarrot::utility::Size<int> BlueCarrot::callback::GetScreenSize()
