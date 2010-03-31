@@ -48,6 +48,8 @@ namespace cradol
 		}
 
 		m_pCharacter->Move(move);
+
+		BlueCarrot::SceneRendering::Update(elapsed_time);
 	}
 
 }

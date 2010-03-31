@@ -11,4 +11,11 @@ namespace cradol
 		EnableAlphablending();
 	}
 
+	void Character::Update(unsigned int elapsed_time)
+	{
+		Move(BlueCarrot::utility::Position<float>(1, 2));
+
+		SceneEntitySprite::Update(elapsed_time);
+	}
+
 }

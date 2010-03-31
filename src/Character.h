@@ -11,6 +11,7 @@ namespace cradol
 	{
 	public:
 		Character();
+		void Update(unsigned int elapsed_time);
 	};
 
 }
