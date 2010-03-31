@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cradol", "cradol\cradol.vcproj", "{B2D434EE-7516-4ACF-BC95-7A32E6CC2FD4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlueCarrot", "BlueCarrot\BlueCarrot.vcproj", "{DBF70D9F-7246-429E-98D7-FF20C57DD4BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2D434EE-7516-4ACF-BC95-7A32E6CC2FD4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B2D434EE-7516-4ACF-BC95-7A32E6CC2FD4}.Debug|Win32.Build.0 = Debug|Win32
+		{B2D434EE-7516-4ACF-BC95-7A32E6CC2FD4}.Release|Win32.ActiveCfg = Release|Win32
+		{B2D434EE-7516-4ACF-BC95-7A32E6CC2FD4}.Release|Win32.Build.0 = Release|Win32
+		{DBF70D9F-7246-429E-98D7-FF20C57DD4BE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DBF70D9F-7246-429E-98D7-FF20C57DD4BE}.Debug|Win32.Build.0 = Debug|Win32
+		{DBF70D9F-7246-429E-98D7-FF20C57DD4BE}.Release|Win32.ActiveCfg = Release|Win32
+		{DBF70D9F-7246-429E-98D7-FF20C57DD4BE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+[submodule "BlueCarrot"]
+	path = BlueCarrot
+	url = git://github.com/tosik/BlueCarrot.git
