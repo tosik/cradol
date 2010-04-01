@@ -4,6 +4,7 @@
 #include "scene/SceneRendering.h"
 
 #include "Character.h"
+#include "Brick.h"
 
 
 namespace cradol
@@ -21,6 +22,7 @@ namespace cradol
 
 	private:
 		Character * m_pCharacter;
+		std::vector<Brick *> m_BrickList;
 
 	};
 
