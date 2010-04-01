@@ -27,27 +27,11 @@ namespace cradol
 
 	void SceneMain::Update(unsigned int elapsed_time)
 	{
-		BlueCarrot::utility::Position<float> move(0, 0);
-
 		BlueCarrot::utility::KeyManager * key = BlueCarrot::GetGlobalInstance()->GetKeyManager();
-		if ( key->IsPushing(BlueCarrot::utility::key::Left) )
+		if ( key->IsJustPushing(BlueCarrot::utility::key::OK) )
 		{
-			move.left = -5;
+			m_pCharacter->Jump();
 		}
-		if ( key->IsPushing(BlueCarrot::utility::key::Right) )
-		{
-			move.left = 5;
-		}
-		if ( key->IsPushing(BlueCarrot::utility::key::Up) )
-		{
-			move.top = -5;
-		}
-		if ( key->IsPushing(BlueCarrot::utility::key::Down) )
-		{
-			move.top = 5;
-		}
-
-		m_pCharacter->Move(move);
 
 		BlueCarrot::SceneRendering::Update(elapsed_time);
 	}

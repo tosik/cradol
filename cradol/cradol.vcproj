@@ -187,6 +187,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\src\MapObject.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\src\SceneMain.cpp"
 				>
 			</File>
@@ -198,6 +202,14 @@
 			>
 			<File
 				RelativePath="..\src\Character.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\MapObject.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\PhysicalObject.h"
 				>
 			</File>
 			<File
@@ -219,18 +231,6 @@
 			Name="Library"
 			>
 			<File
-				RelativePath="..\Release\BlueCarrot.lib"
-				>
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-					>
-					<Tool
-						Name="VCCustomBuildTool"
-					/>
-				</FileConfiguration>
-			</File>
-			<File
 				RelativePath="..\Debug\BlueCarrot.lib"
 				>
 				<FileConfiguration
@@ -242,6 +242,18 @@
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\Release\BlueCarrot.lib"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
 					ExcludedFromBuild="true"
 					>
 					<Tool

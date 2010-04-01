@@ -1,13 +1,13 @@
 
 #pragma once
 
-#include "entity/SceneEntitySprite.h"
+#include "MapObject.h"
 
 namespace cradol
 {
 
 	class Character
-		: public BlueCarrot::entity::SceneEntitySprite
+		: public MapObject
 	{
 	public:
 		Character();
