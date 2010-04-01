@@ -7,6 +7,9 @@ using namespace BlueCarrot::utility;
 
 namespace cradol
 {
+	// 物理演算用オブジェクト
+	// cradol で用いる簡易的な物理処理を担う
+	// 剛体シミュレーションを行うわけではない
 	class PhysicalObject
 		: public BlueCarrot::utility::Rect<float>
 	{
