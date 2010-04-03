@@ -213,6 +213,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\src\MapEngine.h"
+				>
+			</File>
+			<File
 				RelativePath="..\src\MapObject.h"
 				>
 			</File>
@@ -239,6 +243,18 @@
 			Name="Library"
 			>
 			<File
+				RelativePath="..\Release\BlueCarrot.lib"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
 				RelativePath="..\Debug\BlueCarrot.lib"
 				>
 				<FileConfiguration
@@ -250,18 +266,6 @@
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
-					ExcludedFromBuild="true"
-					>
-					<Tool
-						Name="VCCustomBuildTool"
-					/>
-				</FileConfiguration>
-			</File>
-			<File
-				RelativePath="..\Release\BlueCarrot.lib"
-				>
-				<FileConfiguration
-					Name="Debug|Win32"
 					ExcludedFromBuild="true"
 					>
 					<Tool
