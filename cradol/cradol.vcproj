@@ -179,19 +179,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\src\Brick.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\src\Character.cpp"
-				>
-			</File>
-			<File
 				RelativePath="..\src\main.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\src\MapObject.cpp"
 				>
 			</File>
 			<File
@@ -204,26 +192,6 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
-			<File
-				RelativePath="..\src\Brick.h"
-				>
-			</File>
-			<File
-				RelativePath="..\src\Character.h"
-				>
-			</File>
-			<File
-				RelativePath="..\src\MapEngine.h"
-				>
-			</File>
-			<File
-				RelativePath="..\src\MapObject.h"
-				>
-			</File>
-			<File
-				RelativePath="..\src\PhysicalObject.h"
-				>
-			</File>
 			<File
 				RelativePath="..\src\SceneID.h"
 				>
@@ -243,18 +211,6 @@
 			Name="Library"
 			>
 			<File
-				RelativePath="..\Release\BlueCarrot.lib"
-				>
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-					>
-					<Tool
-						Name="VCCustomBuildTool"
-					/>
-				</FileConfiguration>
-			</File>
-			<File
 				RelativePath="..\Debug\BlueCarrot.lib"
 				>
 				<FileConfiguration
@@ -266,6 +222,18 @@
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\Release\BlueCarrot.lib"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
 					ExcludedFromBuild="true"
 					>
 					<Tool
