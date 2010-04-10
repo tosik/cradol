@@ -13,7 +13,7 @@ namespace cradol
 	SceneMain::SceneMain()
 		: BlueCarrot::SceneRendering(SCENE_MAIN)
 		, m_Maze(31, 21)
-		, m_Player(BlueCarrot::utility::Position<int>(1, 1), Top)
+		, m_Player(BlueCarrot::utility::Position<int>(1, 1), Top, BlueCarrot::utility::Size<int>(m_Maze.GetSizeX(), m_Maze.GetSizeY()))
 	{
 	}
 
@@ -124,11 +124,7 @@ namespace cradol
 		{
 			for ( int x = 0 ; x < m_Maze.GetSizeX() ; x ++ )
 			{
-				if ( m_Maze.IsWall(x, y) )
-				{
-					DebugOut("%%%%");
-				}
-				else if ( m_Player.GetPosition() == BlueCarrot::utility::Position<int>(x, y) )
+				if ( m_Player.GetPosition() == BlueCarrot::utility::Position<int>(x, y) )
 				{
 					switch ( m_Player.GetDirection() )
 					{
@@ -145,6 +141,14 @@ namespace cradol
 						DebugOut("<-");
 						break;
 					}
+				}
+				else if ( m_Player.GetMap()->IsMarked(BlueCarrot::utility::Position<int>(x, y)) )
+				{
+					DebugOut("!!");
+				}
+				else if ( m_Maze.IsWall(x, y) )
+				{
+					DebugOut("%%%%");
 				}
 				else
 				{

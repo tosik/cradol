@@ -14,7 +14,7 @@ namespace cradol
 			: SceneEntitySprite(filename)
 		{
 			EnableAlphatest();
-			SetRect(BlueCarrot::utility::Rect<float>(0, 0, 300, 300));
+			SetRect(BlueCarrot::utility::Rect<float>(0, 0, 400, 300));
 		}
 	};
 }

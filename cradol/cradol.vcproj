@@ -197,6 +197,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\src\Map.h"
+				>
+			</File>
+			<File
 				RelativePath="..\src\Player.h"
 				>
 			</File>
