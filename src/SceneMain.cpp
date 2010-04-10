@@ -25,6 +25,8 @@ namespace cradol
 		for ( std::vector<WallRenderingEntity *>::const_iterator it = m_pWallRenderer->GetEntities().begin() ;
 			it != m_pWallRenderer->GetEntities().end() ; it ++ )
 			AddSceneEntity(*it);
+
+		AddSceneEntity(m_Player.GetMap());
 	}
 
 	void SceneMain::Finalize()
