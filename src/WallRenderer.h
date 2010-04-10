@@ -50,10 +50,15 @@ namespace cradol
 		void SetWallState(bool w[10])
 		{
 			for ( int i = 0 ; i < 10 ; i ++ )
-			if ( w[i] )
-				m_WallList[i]->EnableRendering();
-			else
-				m_WallList[i]->DisableRendering();
+			{
+				if ( m_WallList[i]->IsLoaded() )
+				{
+					if ( w[i] )
+						m_WallList[i]->EnableRendering();
+					else
+						m_WallList[i]->DisableRendering();
+				}
+			}
 		}
 
 	private:
