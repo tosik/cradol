@@ -2,6 +2,7 @@
 #pragma once
 
 #include "scene/SceneRendering.h"
+#include "Maze.h"
 
 
 namespace cradol
@@ -18,6 +19,7 @@ namespace cradol
 		void Update(unsigned int elapsed_time);
 
 	private:
+		automaze::Maze m_Maze;
 	};
 
 }

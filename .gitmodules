@@ -1,3 +1,6 @@
 [submodule "BlueCarrot"]
 	path = BlueCarrot
 	url = git://github.com/tosik/BlueCarrot.git
+[submodule "automaze"]
+	path = automaze
+	url = git://github.com/tosik/automaze.git

@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src\&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src\&quot;;&quot;$(SolutionDir)automaze\include\&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -116,7 +116,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src\&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)BlueCarrot\src\&quot;;&quot;$(SolutionDir)automaze\include\&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -211,6 +211,18 @@
 			Name="Library"
 			>
 			<File
+				RelativePath="..\Release\BlueCarrot.lib"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
 				RelativePath="..\Debug\BlueCarrot.lib"
 				>
 				<FileConfiguration
@@ -229,17 +241,25 @@
 					/>
 				</FileConfiguration>
 			</File>
+		</Filter>
+		<Filter
+			Name="automaze"
+			>
 			<File
-				RelativePath="..\Release\BlueCarrot.lib"
+				RelativePath="..\automaze\src\Boutaoshi.cpp"
 				>
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-					>
-					<Tool
-						Name="VCCustomBuildTool"
-					/>
-				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\automaze\include\Boutaoshi.h"
+				>
+			</File>
+			<File
+				RelativePath="..\automaze\src\Maze.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\automaze\include\Maze.h"
+				>
 			</File>
 		</Filter>
 	</Files>
