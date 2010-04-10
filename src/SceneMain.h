@@ -3,6 +3,8 @@
 
 #include "scene/SceneRendering.h"
 #include "Maze.h"
+#include "WallRenderer.h"
+#include "Player.h"
 
 
 namespace cradol
@@ -18,8 +20,12 @@ namespace cradol
 		void Finalize();
 		void Update(unsigned int elapsed_time);
 
+		void DebugShow();
+
 	private:
 		automaze::Maze m_Maze;
+		WallRenderer * m_pWallRenderer;
+		Player m_Player;
 	};
 
 }

@@ -193,11 +193,27 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath="..\src\Direction.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\Player.h"
+				>
+			</File>
+			<File
 				RelativePath="..\src\SceneID.h"
 				>
 			</File>
 			<File
 				RelativePath="..\src\SceneMain.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\WallRenderer.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\WallRenderingEntity.h"
 				>
 			</File>
 		</Filter>
