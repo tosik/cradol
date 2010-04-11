@@ -15,6 +15,7 @@ namespace cradol
 			, m_Direction(direction)
 			, m_Map(map_size)
 		{
+			m_Map.SetDirection(m_Direction);
 		}
 
 		virtual ~Player()
@@ -40,11 +41,13 @@ namespace cradol
 		void TurnLeft()
 		{
 			m_Direction = cradol::TurnLeft(m_Direction);
+			m_Map.SetDirection(m_Direction);
 		}
 
 		void TurnRight()
 		{
 			m_Direction = cradol::TurnRight(m_Direction);
+			m_Map.SetDirection(m_Direction);
 		}
 
 		Map * GetMap()
